@@ -1,0 +1,16 @@
+"use strict";
+exports.__esModule = true;
+var Puntos_1 = require("./Puntos");
+var p1 = new Puntos_1.Punto(14, -2);
+var p2 = new Puntos_1.Punto(10, 16);
+var p3 = new Puntos_1.Punto(-2, 14);
+var p4 = new Puntos_1.Punto(24, 9);
+var arr = [p1, p2, p3];
+console.log(p1.calcularDistancia(p2));
+console.log(p1.distanciaAlOrigen());
+p1.setX(5);
+p1.setY(7);
+console.log(p4.calcularPuntoCercano(arr));
+console.log(p1.getX());
+console.log(p1.getY());
+console.log(p1.calcularcuadrante());
