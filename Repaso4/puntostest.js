@@ -1,6 +1,7 @@
 "use strict";
 exports.__esModule = true;
 var Puntos_1 = require("./Puntos");
+var Triangulo_1 = require("./Triangulo");
 var p1 = new Puntos_1.Punto(14, -2);
 var p2 = new Puntos_1.Punto(10, 16);
 var p3 = new Puntos_1.Punto(-2, 14);
@@ -14,3 +15,7 @@ console.log(p4.calcularPuntoCercano(arr));
 console.log(p1.getX());
 console.log(p1.getY());
 console.log(p1.calcularcuadrante());
+var arrp = [p1, p2, p3];
+var tri = new Triangulo_1.Triangulo(arrp);
+console.log(tri);
+console.log(tri.calcularLongLad());
